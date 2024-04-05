@@ -18,8 +18,8 @@ class Navigation(ft.Row):
 
     def route(self, title: str, route_to: str) -> ft.Control:
         return ft.Text(
-            size=11,
+            size=20,
             weight="bold",
-            color="white",
+            color="#FFC94A",
             spans=[ft.TextSpan(title, on_click=lambda __: self.page.go(route_to))],
         )

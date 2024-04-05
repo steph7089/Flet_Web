@@ -10,12 +10,12 @@ class Header(ft.Container):
         docs: dict,
         full_nav: ft.Row,
         mobile_nav: ft.IconButton,
-        height=90,
+        height=220,
         padding=ft.padding.only(left=60, right=60),
         shadow=ft.BoxShadow(
             spread_radius=2,
             blur_radius=4,
-            color=ft.colors.with_opacity(0.25, "black"),
+            color=ft.colors.with_opacity(0.25, '#795458'),
             offset=ft.Offset(3, 3),
         ),
         animate=ft.Animation(500, "ease"),
@@ -60,7 +60,7 @@ class Header(ft.Container):
                                 vertical_offset=25,
                                 message="Go to repository",
                                 bgcolor=ft.colors.with_opacity(0.85, "#20222c"),
-                                text_style=ft.TextStyle(color="white", size=9),
+                                text_style=ft.TextStyle(color="primary_1", size=9),
                                 content=self.repo_data,
                             ),
                         ),
@@ -72,8 +72,8 @@ class Header(ft.Container):
         self.title = ft.Text(
             # start #
             "Steph Dev Landing page",  # end #
-            size=21,
-            color="Black",
+            size=40,
+            color='#795458',
             weight="w700",
             opacity=1,
             offset=ft.transform.Offset(0, 0),
@@ -92,7 +92,7 @@ class Header(ft.Container):
         self.bgcolor = self.background_color
 
         self.content = ft.Column(
-            alignment="center",
+            alignment="start",
             spacing=20,
             controls=[
                 #
@@ -104,12 +104,12 @@ class Header(ft.Container):
                         ft.Row(
                             spacing=1,
                             alignment="end",
-                            vertical_alignment="center",
+                            vertical_alignment="start",
                             controls=[
                                 ft.IconButton(
-                                    icon_size=14,
+                                    icon_size=25,
                                     icon=ft.icons.DARK_MODE_ROUNDED,
-                                    icon_color="white",
+                                    icon_color='#795458',
                                     on_click=lambda e: self.toggle_theme(e),
                                 ),
                                 self.repo,

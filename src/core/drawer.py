@@ -50,7 +50,7 @@ class Drawer(ft.Container):
                             name,  # end #
                             size=19,
                             weight="w700",
-                            color="white",
+                            color="#FFC94A",
                         )
                     ],
                 ),

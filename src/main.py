@@ -98,3 +98,6 @@ def main(page: ft.Page):
 
 
 ft.app(target=main, view="web_browser")
+# ft.app(target=main)
+
+

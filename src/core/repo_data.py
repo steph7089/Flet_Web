@@ -31,7 +31,7 @@ class RepoData(ft.Row):
                     ft.Text(
                         self.repo_name,
                         size=11,
-                        color="white",
+                        color="red",
                         weight="w700",
                     ),
                     ft.Row(
