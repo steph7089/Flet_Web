@@ -71,9 +71,9 @@ class Header(ft.Container):
 
         self.title = ft.Text(
             # start #
-            "fletxible.",  # end #
+            "Steph Dev Landing page",  # end #
             size=21,
-            color="white",
+            color="Black",
             weight="w700",
             opacity=1,
             offset=ft.transform.Offset(0, 0),
